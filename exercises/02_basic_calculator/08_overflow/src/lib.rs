@@ -6,11 +6,11 @@
 // at the root of the repository, not in the `Cargo.toml` of the exercise.
 
 pub fn factorial(n: u32) -> u32 {
-    let mut result = 1;
+    let mut product: u32 = 1;
     for i in 1..=n {
-        result *= i;
+        product *= i;
     }
-    result
+    product
 }
 
 #[cfg(test)]
